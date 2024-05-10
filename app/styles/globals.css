@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Outfit:wght@100..900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --body-bg: #121314;
+  --red-main:  #E74C3C;
+  --btn-color: #736CED;
+  --static-bg-url: url('https://ablyv-dev.azurewebsites.net/static/images/noise-light.png');
+}
+
+body{
+  background-color: var(--body-bg);
+}
+/*
+
+div.topnav{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #1E1E24;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px 0;
+  font-family: 'DM Sans', sans-serif;
+  color: #fff;
+  border-bottom: 1px solid #333;
+
+  & a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  & a[title="About"]{
+    color:  #9A94BC;
+  }
+}
+*/
+div.header-container{
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 2000 1143%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cmask id=%22b%22 x=%220%22 y=%220%22 width=%222000%22 height=%221143%22%3E%3Cpath fill=%22url(%23a)%22 d=%22M0 0h2000v1143H0z%22%2F%3E%3C%2Fmask%3E%3Cpath fill=%22%23121314%22 d=%22M0 0h2000v1143H0z%22%2F%3E%3Cg style=%22transform-origin:center center%22 stroke=%22%23444444e6%22 stroke-width=%221.8%22 mask=%22url(%23b)%22%3E%3Cpath fill=%22none%22 d=%22M0 0h74v74H0z%22%2F%3E%3Cpath fill=%22%2344444495%22 d=%22M74 0h74v74H74z%22%2F%3E%3Cpath fill=%22%234444448e%22 d=%22M148 0h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444444f%22 d=%22M222 0h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M296 0h74v74h-74zM370 0h74v74h-74zM444 0h74v74h-74zM518 0h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444445b%22 d=%22M592 0h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444485%22 d=%22M666 0h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444441c%22 d=%22M740 0h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M814 0h74v74h-74zM888 0h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444a3%22 d=%22M962 0h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444490%22 d=%22M1036 0h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444aa%22 d=%22M1110 0h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444443b%22 d=%22M1184 0h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1258 0h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444409%22 d=%22M1332 0h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1406 0h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444441f%22 d=%22M1480 0h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1554 0h74v74h-74zM1628 0h74v74h-74zM1702 0h74v74h-74zM1776 0h74v74h-74zM1850 0h74v74h-74zM1924 0h74v74h-74zM0 74h74v74H0zM74 74h74v74H74zM148 74h74v74h-74zM222 74h74v74h-74zM296 74h74v74h-74zM370 74h74v74h-74zM444 74h74v74h-74zM518 74h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444464%22 d=%22M592 74h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M666 74h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444431%22 d=%22M740 74h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444440b%22 d=%22M814 74h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M888 74h74v74h-74zM962 74h74v74h-74zM1036 74h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444406%22 d=%22M1110 74h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444d8%22 d=%22M1184 74h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1258 74h74v74h-74zM1332 74h74v74h-74zM1406 74h74v74h-74zM1480 74h74v74h-74zM1554 74h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444441e%22 d=%22M1628 74h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444cc%22 d=%22M1702 74h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1776 74h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444d0%22 d=%22M1850 74h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444448d%22 d=%22M1924 74h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444496%22 d=%22M0 148h74v74H0z%22%2F%3E%3Cpath fill=%22%234444442f%22 d=%22M74 148h74v74H74z%22%2F%3E%3Cpath fill=%22%2344444489%22 d=%22M148 148h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444445c%22 d=%22M222 148h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M296 148h74v74h-74zM370 148h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444444b%22 d=%22M444 148h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M518 148h74v74h-74zM592 148h74v74h-74zM666 148h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444413%22 d=%22M740 148h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444442d%22 d=%22M814 148h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M888 148h74v74h-74zM962 148h74v74h-74zM1036 148h74v74h-74zM1110 148h74v74h-74zM1184 148h74v74h-74zM1258 148h74v74h-74zM1332 148h74v74h-74zM1406 148h74v74h-74zM1480 148h74v74h-74zM1554 148h74v74h-74zM1628 148h74v74h-74zM1702 148h74v74h-74zM1776 148h74v74h-74zM1850 148h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444430%22 d=%22M1924 148h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 222h74v74H0z%22%2F%3E%3Cpath fill=%22%2344444495%22 d=%22M74 222h74v74H74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M148 222h74v74h-74zM222 222h74v74h-74zM296 222h74v74h-74zM370 222h74v74h-74zM444 222h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444486%22 d=%22M518 222h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444491%22 d=%22M592 222h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444447e%22 d=%22M666 222h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M740 222h74v74h-74zM814 222h74v74h-74zM888 222h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444ce%22 d=%22M962 222h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1036 222h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444494%22 d=%22M1110 222h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1184 222h74v74h-74zM1258 222h74v74h-74zM1332 222h74v74h-74zM1406 222h74v74h-74zM1480 222h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444438%22 d=%22M1554 222h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1628 222h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444a6%22 d=%22M1702 222h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1776 222h74v74h-74zM1850 222h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444413%22 d=%22M1924 222h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444442b%22 d=%22M0 296h74v74H0z%22%2F%3E%3Cpath fill=%22%2344444495%22 d=%22M74 296h74v74H74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M148 296h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444441c%22 d=%22M222 296h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444431%22 d=%22M296 296h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M370 296h74v74h-74zM444 296h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444479%22 d=%22M518 296h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M592 296h74v74h-74zM666 296h74v74h-74zM740 296h74v74h-74zM814 296h74v74h-74zM888 296h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444446%22 d=%22M962 296h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444469%22 d=%22M1036 296h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444435%22 d=%22M1110 296h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1184 296h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444ad%22 d=%22M1258 296h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1332 296h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444ca%22 d=%22M1406 296h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444df%22 d=%22M1480 296h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444471%22 d=%22M1554 296h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1628 296h74v74h-74zM1702 296h74v74h-74zM1776 296h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444449a%22 d=%22M1850 296h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1924 296h74v74h-74zM0 370h74v74H0z%22%2F%3E%3Cpath fill=%22%2344444454%22 d=%22M74 370h74v74H74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M148 370h74v74h-74zM222 370h74v74h-74zM296 370h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444c3%22 d=%22M370 370h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M444 370h74v74h-74zM518 370h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444bf%22 d=%22M592 370h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M666 370h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444475%22 d=%22M740 370h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M814 370h74v74h-74zM888 370h74v74h-74zM962 370h74v74h-74zM1036 370h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444446a%22 d=%22M1110 370h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444407%22 d=%22M1184 370h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1258 370h74v74h-74zM1332 370h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444466%22 d=%22M1406 370h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1480 370h74v74h-74zM1554 370h74v74h-74zM1628 370h74v74h-74zM1702 370h74v74h-74zM1776 370h74v74h-74zM1850 370h74v74h-74zM1924 370h74v74h-74zM0 444h74v74H0z%22%2F%3E%3Cpath fill=%22%2344444438%22 d=%22M74 444h74v74H74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M148 444h74v74h-74zM222 444h74v74h-74zM296 444h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444484%22 d=%22M370 444h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M444 444h74v74h-74zM518 444h74v74h-74zM592 444h74v74h-74zM666 444h74v74h-74zM740 444h74v74h-74zM814 444h74v74h-74zM888 444h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444440e%22 d=%22M962 444h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1036 444h74v74h-74zM1110 444h74v74h-74zM1184 444h74v74h-74zM1258 444h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444446e%22 d=%22M1332 444h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1406 444h74v74h-74zM1480 444h74v74h-74zM1554 444h74v74h-74zM1628 444h74v74h-74zM1702 444h74v74h-74zM1776 444h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444480%22 d=%22M1850 444h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1924 444h74v74h-74zM0 518h74v74H0zM74 518h74v74H74zM148 518h74v74h-74zM222 518h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444443b%22 d=%22M296 518h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M370 518h74v74h-74zM444 518h74v74h-74zM518 518h74v74h-74zM592 518h74v74h-74zM666 518h74v74h-74zM740 518h74v74h-74zM814 518h74v74h-74zM888 518h74v74h-74zM962 518h74v74h-74zM1036 518h74v74h-74zM1110 518h74v74h-74zM1184 518h74v74h-74zM1258 518h74v74h-74zM1332 518h74v74h-74zM1406 518h74v74h-74zM1480 518h74v74h-74zM1554 518h74v74h-74zM1628 518h74v74h-74zM1702 518h74v74h-74zM1776 518h74v74h-74zM1850 518h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444446e%22 d=%22M1924 518h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 592h74v74H0z%22%2F%3E%3Cpath fill=%22%2344444483%22 d=%22M74 592h74v74H74z%22%2F%3E%3Cpath fill=%22%23444444da%22 d=%22M148 592h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M222 592h74v74h-74zM296 592h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444d5%22 d=%22M370 592h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M444 592h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444413%22 d=%22M518 592h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M592 592h74v74h-74zM666 592h74v74h-74zM740 592h74v74h-74zM814 592h74v74h-74zM888 592h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444444f%22 d=%22M962 592h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1036 592h74v74h-74zM1110 592h74v74h-74zM1184 592h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444441f%22 d=%22M1258 592h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1332 592h74v74h-74zM1406 592h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444453%22 d=%22M1480 592h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1554 592h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444420%22 d=%22M1628 592h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1702 592h74v74h-74zM1776 592h74v74h-74zM1850 592h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444c5%22 d=%22M1924 592h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 666h74v74H0zM74 666h74v74H74zM148 666h74v74h-74zM222 666h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444440c%22 d=%22M296 666h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M370 666h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444489%22 d=%22M444 666h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M518 666h74v74h-74zM592 666h74v74h-74zM666 666h74v74h-74zM740 666h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444442c%22 d=%22M814 666h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M888 666h74v74h-74zM962 666h74v74h-74zM1036 666h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444441d%22 d=%22M1110 666h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444455%22 d=%22M1184 666h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1258 666h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444406%22 d=%22M1332 666h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1406 666h74v74h-74zM1480 666h74v74h-74zM1554 666h74v74h-74zM1628 666h74v74h-74zM1702 666h74v74h-74zM1776 666h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444479%22 d=%22M1850 666h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1924 666h74v74h-74zM0 740h74v74H0zM74 740h74v74H74zM148 740h74v74h-74zM222 740h74v74h-74zM296 740h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444484%22 d=%22M370 740h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M444 740h74v74h-74zM518 740h74v74h-74zM592 740h74v74h-74zM666 740h74v74h-74zM740 740h74v74h-74zM814 740h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444407%22 d=%22M888 740h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M962 740h74v74h-74zM1036 740h74v74h-74zM1110 740h74v74h-74zM1184 740h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444434%22 d=%22M1258 740h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1332 740h74v74h-74zM1406 740h74v74h-74zM1480 740h74v74h-74zM1554 740h74v74h-74zM1628 740h74v74h-74zM1702 740h74v74h-74zM1776 740h74v74h-74zM1850 740h74v74h-74zM1924 740h74v74h-74zM0 814h74v74H0z%22%2F%3E%3Cpath fill=%22%2344444438%22 d=%22M74 814h74v74H74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M148 814h74v74h-74zM222 814h74v74h-74zM296 814h74v74h-74zM370 814h74v74h-74zM444 814h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444c5%22 d=%22M518 814h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M592 814h74v74h-74zM666 814h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444473%22 d=%22M740 814h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M814 814h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444d6%22 d=%22M888 814h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M962 814h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444445b%22 d=%22M1036 814h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1110 814h74v74h-74zM1184 814h74v74h-74zM1258 814h74v74h-74zM1332 814h74v74h-74zM1406 814h74v74h-74zM1480 814h74v74h-74zM1554 814h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444408%22 d=%22M1628 814h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1702 814h74v74h-74zM1776 814h74v74h-74zM1850 814h74v74h-74zM1924 814h74v74h-74zM0 888h74v74H0z%22%2F%3E%3Cpath fill=%22%2344444432%22 d=%22M74 888h74v74H74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M148 888h74v74h-74zM222 888h74v74h-74zM296 888h74v74h-74zM370 888h74v74h-74zM444 888h74v74h-74zM518 888h74v74h-74zM592 888h74v74h-74zM666 888h74v74h-74zM740 888h74v74h-74zM814 888h74v74h-74zM888 888h74v74h-74zM962 888h74v74h-74zM1036 888h74v74h-74zM1110 888h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444496%22 d=%22M1184 888h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444a8%22 d=%22M1258 888h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1332 888h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444be%22 d=%22M1406 888h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1480 888h74v74h-74zM1554 888h74v74h-74zM1628 888h74v74h-74zM1702 888h74v74h-74zM1776 888h74v74h-74zM1850 888h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444417%22 d=%22M1924 888h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 962h74v74H0zM74 962h74v74H74z%22%2F%3E%3Cpath fill=%22%2344444419%22 d=%22M148 962h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M222 962h74v74h-74zM296 962h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444465%22 d=%22M370 962h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444443%22 d=%22M444 962h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M518 962h74v74h-74zM592 962h74v74h-74zM666 962h74v74h-74zM740 962h74v74h-74zM814 962h74v74h-74zM888 962h74v74h-74zM962 962h74v74h-74zM1036 962h74v74h-74zM1110 962h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444406%22 d=%22M1184 962h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1258 962h74v74h-74zM1332 962h74v74h-74zM1406 962h74v74h-74zM1480 962h74v74h-74zM1554 962h74v74h-74zM1628 962h74v74h-74zM1702 962h74v74h-74zM1776 962h74v74h-74zM1850 962h74v74h-74zM1924 962h74v74h-74zM0 1036h74v74H0zM74 1036h74v74H74zM148 1036h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444411%22 d=%22M222 1036h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M296 1036h74v74h-74zM370 1036h74v74h-74zM444 1036h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444486%22 d=%22M518 1036h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M592 1036h74v74h-74zM666 1036h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444442d%22 d=%22M740 1036h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444433%22 d=%22M814 1036h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444bb%22 d=%22M888 1036h74v74h-74z%22%2F%3E%3Cpath fill=%22%234444443c%22 d=%22M962 1036h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444df%22 d=%22M1036 1036h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1110 1036h74v74h-74zM1184 1036h74v74h-74zM1258 1036h74v74h-74zM1332 1036h74v74h-74zM1406 1036h74v74h-74zM1480 1036h74v74h-74zM1554 1036h74v74h-74zM1628 1036h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444ab%22 d=%22M1702 1036h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1776 1036h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444ca%22 d=%22M1850 1036h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444bc%22 d=%22M1924 1036h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 1110h74v74H0z%22%2F%3E%3Cpath fill=%22%234444446e%22 d=%22M74 1110h74v74H74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M148 1110h74v74h-74zM222 1110h74v74h-74zM296 1110h74v74h-74zM370 1110h74v74h-74zM444 1110h74v74h-74zM518 1110h74v74h-74zM592 1110h74v74h-74zM666 1110h74v74h-74zM740 1110h74v74h-74zM814 1110h74v74h-74zM888 1110h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444450%22 d=%22M962 1110h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1036 1110h74v74h-74zM1110 1110h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444ac%22 d=%22M1184 1110h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1258 1110h74v74h-74zM1332 1110h74v74h-74zM1406 1110h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444b5%22 d=%22M1480 1110h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1554 1110h74v74h-74zM1628 1110h74v74h-74z%22%2F%3E%3Cpath fill=%22%23444444df%22 d=%22M1702 1110h74v74h-74z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1776 1110h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444430%22 d=%22M1850 1110h74v74h-74z%22%2F%3E%3Cpath fill=%22%2344444459%22 d=%22M1924 1110h74v74h-74z%22%2F%3E%3C%2Fg%3E%3Cpath fill=%22%23f3f3f3%22 filter=%22url(%23c)%22 opacity=%22.8%22 d=%22M0 0h2000v1143H0z%22%2F%3E%3Cdefs%3E%3CradialGradient id=%22a%22%3E%3Cstop offset=%220%22 stop-color=%22%23fff%22%2F%3E%3Cstop offset=%221%22 stop-color=%22%23fff%22 stop-opacity=%220%22%2F%3E%3C%2FradialGradient%3E%3Cfilter id=%22c%22 x=%22-800%22 y=%22-457.2%22 width=%222800%22 height=%221600.2%22 filterUnits=%22userSpaceOnUse%22 primitiveUnits=%22userSpaceOnUse%22 color-interpolation-filters=%22linearRGB%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%22.105%22 numOctaves=%224%22 seed=%2215%22 stitchTiles=%22no-stitch%22 x=%220%22 y=%220%22 width=%222000%22 height=%221143%22 result=%22turbulence%22%2F%3E%3CfeSpecularLighting surfaceScale=%2210%22 specularConstant=%22.07%22 specularExponent=%2220%22 lighting-color=%22%23fff%22 x=%220%22 y=%220%22 width=%222000%22 height=%221143%22 in=%22turbulence%22 result=%22specularLighting%22%3E%3CfeDistantLight azimuth=%223%22 elevation=%22100%22%2F%3E%3C%2FfeSpecularLighting%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #333;
+}
+
+div.header{
+  margin-top: -150px;
+  padding: 16px 16px 32px 16px;
+  border-radius: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.15);
+  text-align: center;
+  & h1.title{
+    margin: 0 0 22px 0;
+    color: #4D6AFF;
+    font-size: 72px;
+    letter-spacing: 0.01em;
+    font-weight: 500;
+    font-family: 'Reddit Mono', sans-serif;
+  }
+
+  & p{
+    margin: 0 auto 38px auto;
+    text-align: center;
+    width: 60%;
+    font-family: 'DM Sans', sans-serif;
+    color: #C2D3CD;
+  }
+
+  & a{
+    padding: 8px 16px;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Reddit Mono', sans-serif;
+    background-color: var(--btn-color);
+    transition: 0.2s;
+  }
+
+  & a:hover{
+    cursor: pointer;
+    filter: brightness(90%);
+  }
+}
+
+.about-container{
+  width: 100vw;
+  margin: 0 0 120px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  & .about{
+    width: 50vw;
+    padding: 32px;
+
+    & h2{
+      margin: 16px 0;
+      color: var(--btn-color);
+      font-family: 'Reddit Mono', sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    & p{
+      border-left: 2px solid var(--btn-color);
+      padding-left: 16px;
+      color: #E8F1F2;
+      font-family: 'Outfit', sans-serif;
+      width: 40vw;
+      font-size: 16px;
+      letter-spacing: 0.3px;
+      font-weight: 600;
+      margin: 0 0 38px 0;
+    }
+
+    & a{
+      padding: 8px 16px;
+      border-radius: 0.2rem;
+      text-decoration: none;
+      color: #fff;
+      font-size: 22px;
+      font-family: 'Reddit Mono', sans-serif;
+      background-color: var(--btn-color);
+      transition: 0.2s;
+    }
+
+    & a:hover{
+      cursor: pointer;
+      filter: brightness(90%);
+    }
+  }
+
+  & .skills-container{
+    width: 40vw;
+
+    & p{
+      color: #fafafa;
+      font-size: 16px;
+      padding: 8px;
+      border-radius: 0.3rem;
+      margin: 4px;
+      font-family: 'Roboto', sans-serif;
+      display: inline-block;
+      border: 1px solid #333;
+      background-color: #161a1d;
+    }
+  }
+}
+
+.content-header{
+  margin-top: 48px;
+  margin-bottom: 20px;
+  width: 100vw;
+  text-align: center;
+  & h1{
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  & hr{
+    margin: 10px 0;
+    border: 4px solid var(--btn-color);
+    transform: skew(-20deg);
+    margin-left: 46vw;
+    width: 8vw;
+  }
+
+  & p{
+    color: #ADBF97;
+    font-family: 'Reddit Mono', sans-serif;
+  }
+}
+
+.highlight{
+  margin-right: 1px;
+  color: #4D6AFF;
+}
+
+::selection{
+  color: #fff;
+  background-color: #000;
+}
+
+.projects-container{
+  width: 100vw;
+  display: flex;
+  margin: 0 0 120px 0;
+  justify-content: space-around;
+  align-items: center;
+  & .project{
+    border-radius: 0.4rem;
+    padding: 16px;
+    width: 25vw;
+    background-color: #1b1f22;
+
+    & h2{
+      color: #fff;
+      font-family: 'Reddit Mono', sans-serif;
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+
+    & p#desc{
+      font-size: 16px;
+      width: 80%;
+      font-family: 'Outfit', sans-serif;
+      color: #B6C2D9;
+      margin-bottom: 6px;
+    }
+
+    & .project-items{
+      width: 90%;
+      & p{
+        color: #fafafa;
+        font-size: 16px;
+        padding: 8px;
+        border-radius: 0.3rem;
+        margin: 4px 6px 4px 0;
+        font-family: 'Roboto', sans-serif;
+        display: inline-block;
+        border: 1px solid #333;
+        background-color: #161a1d;
+      }
+      margin-bottom: 16px;
+    }
+
+    & a{
+      padding: 8px 16px;
+      border-radius: 0.2rem;
+      text-decoration: none;
+      color: #fff;
+      font-size: 22px;
+      font-family: 'Reddit Mono', sans-serif;
+      background-color: var(--btn-color);
+      transition: 0.2s;
+      filter: brightness(80%);
+    }
+
+    & a:hover{
+      cursor: pointer;
+      filter: brightness(85%);
+    }
+  }
+}
+
+.footer-container{
+  background-color: #000;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  font-size: 18px;
+  & >*{color: #fff};
+  text-decoration: none;
+  border-top: 1px solid #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
