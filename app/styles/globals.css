@@ -275,3 +275,71 @@ div.header{
   justify-content: space-around;
   align-items: center;
 }
+
+@media screen and (max-width: 500px){
+  div.header{
+    & h1.title{
+      font-size:32px;letter-spacing:none;
+    }
+    & p{
+      width: 80%;
+    }
+  } 
+
+  .about-container{
+    display: block;
+    justify-content: none;
+    align-items: none;
+    width: auto;
+    & .about{
+      text-align: center;
+      display: block;
+      width: 100vw;
+
+      & h2{
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+      }
+
+      & p{
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        font-weight: 400;
+        border: none;
+      }
+
+      & a{
+        display: none;
+      }
+    }
+
+    & .skills-container{
+      text-align: center;
+      width: 90%;
+      margin-left: 5%;
+    }
+  }
+
+  .projects-container{
+    display: block;
+    justify-content: none;
+    align-items: none;
+    width: auto;
+
+    & .project{
+      width: 90vw;
+      margin-left: 5vw;
+      margin-bottom: 20px;
+
+      & .project-items{
+        width: 100%;
+
+        & p{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

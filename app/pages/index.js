@@ -106,7 +106,7 @@ export default function Newpage(){
       <Link href="https://instagram.com/Nebularityy"><FontAwesomeIcon icon={faInstagram} /></Link>
       <Link href="https://github.com/NebulousCalm"><FontAwesomeIcon icon={faGithub} /></Link>
       <Link href="mailto:zjrichman@outlook.com"><FontAwesomeIcon icon={faEnvelope} /></Link>
-      <Link href="#"><FontAwesomeIcon icon={faStackOverflow} /></Link>
+      <Link href="https://stackoverflow.com/users/22534317/nebulous"><FontAwesomeIcon icon={faStackOverflow} /></Link>
     </div>
     </main>
   );
