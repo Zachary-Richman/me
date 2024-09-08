@@ -28,7 +28,7 @@ export default function Newpage(){
       <div className="about">
         <h2>Get to know me!</h2>
         <p>
-          Hey! I&apos;m <span className="highlight">Zach</span>, I&apos;ve been programming for over 5 years now. I first started with python, but quickly found my place as a web developer. In terms of code, I&apos;m all over the place. From fancy front end web design to training AI to recognize if I&apos;m awake or not, my skills are vast. You can frequently find me at computer science clubs (Go Myers Park Comp. Sci. Honors Society), or entered in coding challenges. I freelance doing just about anything, so nothing is out of the realm of possibility.
+          Hey! I&apos;m <span className="highlight">Zach</span>, I&apos;ve been programming for over 5 years now. I first started with python, but quickly found my place as a web developer. In terms of code, I&apos;m all over the place. From fancy front end web design to training AI to recognize if I&apos;m awake or not, my skills are vast. You can frequently find me entered in hackathons, or contributing to the Open-Source world! I freelance doing just about anything, so nothing is out of the realm of possibility.
         </p>
         <Link href="#projects">Projects</Link>
       </div>
@@ -51,6 +51,7 @@ export default function Newpage(){
         <p>Java</p>
         <p>Raspberry PI</p>
         <p>Shell</p>
+        <p>Typescript</p>
       </div>
     </div>  
 
@@ -77,15 +78,16 @@ export default function Newpage(){
 
       <div className="project">
         <h2>Lumina</h2>
-        <p id="desc">A free, open source way to improve speech and debate</p>
+        <p id="desc">A free and open source home assistant</p>
         <div className="project-items">
           <p>Python</p>
-          <p>Node.js</p>
-          <p>Expressjs</p>
-          <p>React Native</p>
-          <p>OpenCV</p>
+          <p>git</p>
+          <p>Raspberry PI</p>
+          <p>Networking</p>
+          <p>ollama</p>
+          <p>AI/LLM</p>
         </div>
-        <Link href="https://github.com/Actium-Open-Source/Lumina">Github</Link>
+        <Link href="https://github.com/Lumina-Home-Assistant">Github</Link>
       </div>
 
       <div className="project">
