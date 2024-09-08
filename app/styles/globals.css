@@ -80,6 +80,7 @@ div.header{
     width: 60%;
     font-family: 'DM Sans', sans-serif;
     color: #C2D3CD;
+    font-size: 22px;
   }
 
   & a{
@@ -87,6 +88,7 @@ div.header{
     border-radius: 0.2rem;
     text-decoration: none;
     color: #fff;
+    font-weight: 500;
     font-size: 22px;
     font-family: 'Reddit Mono', sans-serif;
     background-color: var(--btn-color);
